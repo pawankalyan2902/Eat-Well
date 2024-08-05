@@ -1,0 +1,53 @@
+#main_content
+{
+    text-align: center;
+}
+#main_content h1{
+    color: rgb(202, 158, 62);
+   
+
+}
+#browse_content
+{
+    max-width: 40rem;
+    margin: auto;
+    background-color: rgb(250, 233, 194);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    text-align: initial;
+    height: 11rem;
+    margin-bottom: 24px;
+    padding-left: 15px;
+ 
+}
+.details
+{
+    color: rgb(170, 148, 95);
+ 
+}
+#browse_content li{
+    padding: 4px;
+}
+ h3{
+    color: rgb(110, 78, 7);
+    margin-bottom: 0px;
+}
+#btn
+{
+        position: relative;
+        left: 32rem;
+        top: 5px;
+        background-color: rgb(202, 158, 62);
+        border: transparent;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.5s ease-in-out;
+}
+#btn a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+#btn:hover{
+    background-color:rgb(240, 167, 9) ; 
+}

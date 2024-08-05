@@ -1,0 +1,49 @@
+#forms
+{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: rgb(216, 190, 133);
+    text-align: left;
+    width: 30rem;
+    margin: auto;
+}
+#main_content
+{
+    text-align: center;
+}
+#main_content h1{
+    color: rgb(202, 158, 62);
+
+}
+#forms li
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+textarea {
+    font: inherit;
+    height: 11.25rem;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(252, 248, 239);
+    border: 1px solid rgb(121, 85, 7);
+    color: rgb(121, 85, 7);
+    box-sizing: border-box;
+  }
+  button
+  {
+    background-color: rgb(202, 158, 62);
+    border: transparent;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 10px;
+
+  }
+  
+  li label
+  {
+    margin: 2px;
+  }

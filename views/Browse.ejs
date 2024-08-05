@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat well</title>
+    <link rel="icon" href="favicon-16x16.png" type="image">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="browse.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="common.js" defer></script>
+</head>
+
+<body>
+    <%- include("includes/header") %>
+    <main>
+      <%- include("includes/aside")  %>
+        <ul id="main_content">
+            <li>
+                <h1>Recommended Restaurant</h1>
+
+            </li>
+            <li>
+                <p>Share your favorite Restaurants or find recomndation of the users</p>
+                <p>We found <%= numberofrestuarents %> number of restaurants!</p>
+            </li>
+            <% if(numberofrestuarents==0) { %>
+                <h2>Unfortunately,we have no restaurants yet so-maybe start recommending some?</h2>
+                <% } else {%>
+                    <% for(const restaurants of Restaurant) {%>
+                        <div id="browse_content">
+                            <li>
+                                <h3>Name of restaurant: <%= restaurants.Restaurant_name %>
+                                </h3>
+                            </li>
+                            <li class="details">Restaurants cusine: <%= restaurants.cusine %>
+                            </li>
+                            <li class="details">Restaurant address: <%= restaurants.Restaurant_address %>
+                            </li>
+                            <li>Restaurant feed_back: <%=restaurants.feed_back %>
+                            </li>
+                            <button id="btn"><a href="/view">View Restaurant</a></button>
+                        </div>
+                        <% } %>
+                            <% }%>
+
+        </ul>
+    </main>
+</body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat well</title>
+    <link rel="icon" href="favicon-16x16.png" type="image">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="share.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="common.js" defer></script>
+</head>
+
+<body>
+    <%- include("includes/header") %>
+    <main>
+        <%- include("includes/aside")  %>
+        <ul id="main_content">
+            <li>
+                <h1>Share your favorite Restaurant!</h1>
+            </li>
+            </ul>
+            <form action="/data" method="post">
+                <ul id="forms">
+                    <li>
+                        <label for="name">Restaurant name</label>
+                        <input type="text" id="name" name="Restaurant_name">
+                    </li>
+                    <li>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="Restaurant_address">
+                    </li>
+                    <li>
+                        <label for="cusine">Type of cusine</label>
+                        <input type="text" id="cusine" name="cusine">
+                    </li>
+                    <li>
+                        <label for="website">Restaurant website</label>
+                        <input type="text" id="website" name="Restaurant_website">
+                    </li>
+                    <li>
+                        <label for="feed_back">Why do you reccomend it?</label>
+                        <textarea id="feed_back" name="feed_back" row="50"></textarea>
+                    </li>
+                    <button id="btn" type="submit"> Share Restaurant</button>
+                </ul>
+                
+            </form>
+            </main>
+            
+            </body>

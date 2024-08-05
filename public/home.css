@@ -1,0 +1,31 @@
+
+#main_content
+{
+    text-align: center;
+}
+#main_content h1{
+    color: rgb(202, 158, 62);
+
+}
+.branch
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem;
+}
+.branch a
+{
+    padding: 4rem;
+    background-color: rgb(48, 42, 31);
+    color:  rgb(250, 237, 208);
+    text-decoration: none;
+    margin: 1REM;
+    border-radius: 1rem;
+    transition:background-color 0.5s ease-in-out;
+}
+.branch a:hover
+{
+   background-color: rgba(199, 127, 19, 0.551);   
+   color:   rgb(48, 42, 31);                  
+}
